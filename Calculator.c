@@ -51,29 +51,29 @@ void calculationChoice(int choice)
  void addition(int firstNumber,int secondNumber)
  {
     result = firstNumber + secondNumber;
-    printf("Result is: %d",result);
+    printf("\nResult is: %d\n",result);
  }
 
   void subtraction(int firstNumber,int secondNumber)
  {
     result=firstNumber-secondNumber;
-    printf("Result is: %d",result);
+    printf("\nResult is: %d\n",result);
  }
  void multiplication(int firstNumber, int secondNumber)
  {
     result=firstNumber*secondNumber;
-    printf("Result is: %d",result);
+    printf("\nResult is: %d\n",result);
  }
  void division(int firstNumber, int secondNumber)
  {
     if (secondNumber!= 0)
     {
         result=firstNumber/secondNumber;
-        printf("Result is: %d",result);
+        printf("\nResult is: %d\n",result);
     }
     else
     {
-        printf("Error: Division by Zero");
+        printf("\nError: Division by Zero\n");
     }
             
     
