@@ -1,11 +1,10 @@
 #include <stdio.h>
+#include "calculationChoice/calculationChoice.h"
 
-int firstNumber;
-int secondNumber;
 int choice;
 int result;
 
-void calculationChoice(int choice);
+
 void addition(int,int);
 void subtraction(int,int);
 void multiplication(int,int);
@@ -26,27 +25,7 @@ int main()
     calculationChoice(choice);
     return 0;
 }
-void calculationChoice(int choice)
- {
-    switch (choice)
-    {
-    case 1: addition(firstNumber,secondNumber);
-    
-        break;
-    case 2: subtraction(firstNumber,secondNumber);
-        break;
-    case 3: multiplication(firstNumber,secondNumber);
 
-        break;
-    
-    case 4: division(firstNumber,secondNumber);
-        break;
-
-    default:
-            printf("Invalid Command");
-        break;
-    }
- }
 
  void addition(int firstNumber,int secondNumber)
  {
