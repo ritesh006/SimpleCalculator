@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/calc.dir/myLib/driverCode.c.o"
   "CMakeFiles/calc.dir/myLib/driverCode.c.o.d"
-  "libcalc.a"
   "libcalc.pdb"
+  "libcalc.so"
 )
 
 # Per-language clean rules from dependency scanning.

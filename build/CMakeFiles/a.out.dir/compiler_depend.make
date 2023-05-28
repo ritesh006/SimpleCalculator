@@ -27,18 +27,18 @@ CMakeFiles/a.out.dir/main.c.o: ../main.c \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  ../header.h
+  ../myLib/header.h
 
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
+../myLib/header.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-../header.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 

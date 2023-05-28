@@ -92,7 +92,7 @@ a_out_EXTERNAL_OBJECTS =
 
 a.out: CMakeFiles/a.out.dir/main.c.o
 a.out: CMakeFiles/a.out.dir/build.make
-a.out: libcalc.a
+a.out: libcalc.so
 a.out: CMakeFiles/a.out.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable a.out"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a.out.dir/link.txt --verbose=$(VERBOSE)
