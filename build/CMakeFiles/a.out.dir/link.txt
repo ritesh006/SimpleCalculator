@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/a.out.dir/main.c.o CMakeFiles/a.out.dir/driverCode.c.o -o a.out 
+/usr/bin/cc CMakeFiles/a.out.dir/main.c.o -o a.out  libcalc.a 

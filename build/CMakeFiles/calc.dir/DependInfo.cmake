@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ritesh/My_Project/SimpleCalculator/main.c" "CMakeFiles/a.out.dir/main.c.o" "gcc" "CMakeFiles/a.out.dir/main.c.o.d"
+  "/home/ritesh/My_Project/SimpleCalculator/myLib/driverCode.c" "CMakeFiles/calc.dir/myLib/driverCode.c.o" "gcc" "CMakeFiles/calc.dir/myLib/driverCode.c.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles/calc.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

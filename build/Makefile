@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named calc
+
+# Build rule for target.
+calc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calc
+.PHONY : calc
+
+# fast build rule for target.
+calc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/build
+.PHONY : calc/fast
+
+#=============================================================================
 # Target rules for targets named a.out
 
 # Build rule for target.
@@ -128,30 +141,6 @@ a.out: cmake_check_build_system
 a.out/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/build
 .PHONY : a.out/fast
-
-driverCode.o: driverCode.c.o
-.PHONY : driverCode.o
-
-# target to build an object file
-driverCode.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/driverCode.c.o
-.PHONY : driverCode.c.o
-
-driverCode.i: driverCode.c.i
-.PHONY : driverCode.i
-
-# target to preprocess a source file
-driverCode.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/driverCode.c.i
-.PHONY : driverCode.c.i
-
-driverCode.s: driverCode.c.s
-.PHONY : driverCode.s
-
-# target to generate assembly for a file
-driverCode.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/driverCode.c.s
-.PHONY : driverCode.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -177,6 +166,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.c.s
 .PHONY : main.c.s
 
+myLib/driverCode.o: myLib/driverCode.c.o
+.PHONY : myLib/driverCode.o
+
+# target to build an object file
+myLib/driverCode.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/myLib/driverCode.c.o
+.PHONY : myLib/driverCode.c.o
+
+myLib/driverCode.i: myLib/driverCode.c.i
+.PHONY : myLib/driverCode.i
+
+# target to preprocess a source file
+myLib/driverCode.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/myLib/driverCode.c.i
+.PHONY : myLib/driverCode.c.i
+
+myLib/driverCode.s: myLib/driverCode.c.s
+.PHONY : myLib/driverCode.s
+
+# target to generate assembly for a file
+myLib/driverCode.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/calc.dir/build.make CMakeFiles/calc.dir/myLib/driverCode.c.s
+.PHONY : myLib/driverCode.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +199,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... a.out"
-	@echo "... driverCode.o"
-	@echo "... driverCode.i"
-	@echo "... driverCode.s"
+	@echo "... calc"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... myLib/driverCode.o"
+	@echo "... myLib/driverCode.i"
+	@echo "... myLib/driverCode.s"
 .PHONY : help
 
 

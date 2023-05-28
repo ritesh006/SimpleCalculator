@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/a.out.dir/driverCode.c.o"
-  "CMakeFiles/a.out.dir/driverCode.c.o.d"
   "CMakeFiles/a.out.dir/main.c.o"
   "CMakeFiles/a.out.dir/main.c.o.d"
   "a.out"
