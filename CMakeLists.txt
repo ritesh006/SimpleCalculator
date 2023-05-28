@@ -8,3 +8,4 @@ add_library(calc SHARED myLib/driverCode.c) #calc is a lib name
 add_executable(a.out main.c)
 
 target_link_libraries(a.out calc)
+#linking a.out to lib calc
