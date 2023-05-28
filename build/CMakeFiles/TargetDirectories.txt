@@ -1,0 +1,3 @@
+/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles/a.out.dir
+/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles/edit_cache.dir
+/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles/rebuild_cache.dir

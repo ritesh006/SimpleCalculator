@@ -1,6 +1,9 @@
 {
     "files.associations": {
         "simplecalculator": "c",
-        "calculationchoice.h": "c"
+        "calculationchoice.h": "c",
+        "include.h": "c",
+        "stdio.h": "c",
+        "header.h": "c"
     }
 }
