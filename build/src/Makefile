@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles /home/ritesh/My_Project/SimpleCalculator/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles /home/ritesh/My_Project/SimpleCalculator/build/src//CMakeFiles/progress.marks
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named calculationChoice
+# Convenience name for target.
+src/CMakeFiles/calculationChoice.dir/rule:
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/calculationChoice.dir/rule
+.PHONY : src/CMakeFiles/calculationChoice.dir/rule
 
-# Build rule for target.
-calculationChoice: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 calculationChoice
+# Convenience name for target.
+calculationChoice: src/CMakeFiles/calculationChoice.dir/rule
 .PHONY : calculationChoice
 
 # fast build rule for target.
 calculationChoice/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/build
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/build
 .PHONY : calculationChoice/fast
+
+calculationChoice.o: calculationChoice.c.o
+.PHONY : calculationChoice.o
+
+# target to build an object file
+calculationChoice.c.o:
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/calculationChoice.c.o
+.PHONY : calculationChoice.c.o
+
+calculationChoice.i: calculationChoice.c.i
+.PHONY : calculationChoice.i
+
+# target to preprocess a source file
+calculationChoice.c.i:
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/calculationChoice.c.i
+.PHONY : calculationChoice.c.i
+
+calculationChoice.s: calculationChoice.c.s
+.PHONY : calculationChoice.s
+
+# target to generate assembly for a file
+calculationChoice.c.s:
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/calculationChoice.c.s
+.PHONY : calculationChoice.c.s
 
 # Help Target
 help:
@@ -138,6 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... calculationChoice"
+	@echo "... calculationChoice.o"
+	@echo "... calculationChoice.i"
+	@echo "... calculationChoice.s"
 .PHONY : help
 
 
@@ -149,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ritesh/My_Project/SimpleCalculator/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

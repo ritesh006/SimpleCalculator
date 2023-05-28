@@ -63,42 +63,75 @@ CMAKE_BINARY_DIR = /home/ritesh/My_Project/SimpleCalculator/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: include/all
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: include/preinstall
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: include/clean
+clean: src/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Directory level rules for directory include
+
+# Recursive "all" directory target.
+include/all:
+.PHONY : include/all
+
+# Recursive "preinstall" directory target.
+include/preinstall:
+.PHONY : include/preinstall
+
+# Recursive "clean" directory target.
+include/clean:
+.PHONY : include/clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/calculationChoice.dir/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/calculationChoice.dir/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/calculationChoice.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+src/CMakeFiles/calculationChoice.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles --progress-num=1,2 "Built target calculationChoice"
+.PHONY : src/CMakeFiles/calculationChoice.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+src/CMakeFiles/calculationChoice.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/calculationChoice.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/calculationChoice.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
-.PHONY : main
+calculationChoice: src/CMakeFiles/calculationChoice.dir/rule
+.PHONY : calculationChoice
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+src/CMakeFiles/calculationChoice.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/calculationChoice.dir/build.make src/CMakeFiles/calculationChoice.dir/clean
+.PHONY : src/CMakeFiles/calculationChoice.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

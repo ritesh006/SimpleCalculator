@@ -1,7 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.15) #version that required process
 
-project(simple_calculator)  
+project(simpleCalculator)            #project name
 
-
-add_subdirectory(include)
-add_subdirectory(src)
+add_executable(main simpleCalculator.c)

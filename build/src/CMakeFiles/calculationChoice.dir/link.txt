@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcalculationChoice.a CMakeFiles/calculationChoice.dir/calculationChoice.c.o
+/usr/bin/ranlib libcalculationChoice.a
