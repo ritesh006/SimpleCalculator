@@ -1,30 +1,27 @@
-#include <stdio.h>
-#include "calculationChoice/calculationChoice.h"
 
-int choice;
-int result;
+#include "include.h"
 
+void calculationChoice(int choice)
+ {
+    switch (choice)
+    {
+    case 1: addition(firstNumber,secondNumber);
+    
+        break;
+    case 2: subtraction(firstNumber,secondNumber);
+        break;
+    case 3: multiplication(firstNumber,secondNumber);
 
-void addition(int,int);
-void subtraction(int,int);
-void multiplication(int,int);
-void division(int,int);
-int main()
-{
-    printf("\t\t\t\tCALCULATOR\n");
-    printf("Enter Your First Number: ");
-    scanf("%d",&firstNumber);
+        break;
+    
+    case 4: division(firstNumber,secondNumber);
+        break;
 
-    printf("Enter Your Second Number: ");
-    scanf("%d",&secondNumber);
-
-    printf(" 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division");
-    printf("\nEnter Your Choice for Calculation: ");
-
-    scanf("%d",&choice);
-    calculationChoice(choice);
-    return 0;
-}
+    default:
+            printf("Invalid Command");
+        break;
+    }
+ }
 
 
  void addition(int firstNumber,int secondNumber)

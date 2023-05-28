@@ -1,7 +1,0 @@
-/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles/edit_cache.dir
-/home/ritesh/My_Project/SimpleCalculator/build/CMakeFiles/rebuild_cache.dir
-/home/ritesh/My_Project/SimpleCalculator/build/include/CMakeFiles/edit_cache.dir
-/home/ritesh/My_Project/SimpleCalculator/build/include/CMakeFiles/rebuild_cache.dir
-/home/ritesh/My_Project/SimpleCalculator/build/src/CMakeFiles/calculationChoice.dir
-/home/ritesh/My_Project/SimpleCalculator/build/src/CMakeFiles/edit_cache.dir
-/home/ritesh/My_Project/SimpleCalculator/build/src/CMakeFiles/rebuild_cache.dir
